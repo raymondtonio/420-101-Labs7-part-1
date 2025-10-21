@@ -21,3 +21,14 @@ If the sample file cannot be found, the reader will create some simulated
 data. Alternatively, use the LogfileCreator to create some random data.
 Use its createFile method to give a file name and the number of entries
 to create.
+
+PART 1 
+Q1: 18: 237
+
+Q2: Person[] people;
+
+Q3: 
+
+
+
+Q7: 20 objects
