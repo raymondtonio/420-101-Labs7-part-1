@@ -22,13 +22,52 @@ data. Alternatively, use the LogfileCreator to create some random data.
 Use its createFile method to give a file name and the number of entries
 to create.
 
-PART 1 
+PART 1 [weblog-analyzer project]
 Q1: 18: 237
 
 Q2: Person[] people;
 
-Q3: 
+Q3: boolean[]vacant;
+// the rest is for notes.
+    for(int hour = 0; hour < hourCounts.lenghth; hours++){
+   if(hourCounts[hour]==0){
+    vacant[hour]true;
+else
+    vacant[hour]false;
+   }
+}
 
+Q4: 5 times
 
+Q5: int[]counts;
+    boolean[]occupied = new boolean[5000];
+
+Q6: double[] readings = new double[60];
+    String[] urls = new String [90];
+    TicketMachine [] machines = new TicketMachine[5];
 
 Q7: 20 objects
+
+Q8: 
+
+Q9: it shows error due to the fact that there is no index 5 space. (0,1,2,3,4)
+
+Q11: 
+/** * Print all the values in the marks array that are greater than mean.
+ * @param marks An array of mark values.
+ * @param mean The mean (average) mark. */
+public void printGreater(double marks, double mean) {
+for(index = 0; index < marks.length; index++) {
+if(marks[index] > mean) {
+System.out.println(marks[index]);
+}
+}
+
+
+Q12: public LogAnalyzer(String filename)
+    {
+       hourCounts = new int[HOURS_PER_DAY];
+       reader = new LogfileReader(filename);
+     }
+
+Q13: 
