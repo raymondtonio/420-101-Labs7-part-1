@@ -47,8 +47,10 @@ Q6: double[] readings = new double[60];
     TicketMachine [] machines = new TicketMachine[5];
 
 Q7: 20 objects
+// when that code is declared, 20 objects spaces are reserved.
 
-Q8: 
+Q8: double[] prices = new double[50];
+In Java, arrays are created using square brackets.
 
 Q9: it shows error due to the fact that there is no index 5 space. (0,1,2,3,4)
 
@@ -56,18 +58,35 @@ Q11:
 /** * Print all the values in the marks array that are greater than mean.
  * @param marks An array of mark values.
  * @param mean The mean (average) mark. */
-public void printGreater(double marks, double mean) {
-for(index = 0; index < marks.length; index++) {
+public void printGreater(double[] marks, double mean) {
+for(int index = 0; index < marks.length; index++) {
 if(marks[index] > mean) {
 System.out.println(marks[index]);
 }
 }
 
 
-Q12: public LogAnalyzer(String filename)
+Q12: 
+public LogAnalyzer(String filename)
     {
        hourCounts = new int[HOURS_PER_DAY];
        reader = new LogfileReader(filename);
      }
 
 Q13: 
+/** * Return the number of accesses recorded in the log file. */
+public int numberOfAccesses() {
+int total = 0;
+for(int i = 0; i < hourCounts.length; i++){// Add the value in each element of hourCounts to total.
+total += hoursCount(i);
+return total;
+} 
+
+Q14: 
+
+
+
+
+
+
+
